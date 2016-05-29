@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+    <head>
+        <link rel="icon" type="image/png" href="{{STATIC_URL}}images/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <meta http-equiv="Content-Language" content="vi" />
+        <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
+        <title>{{TITLE}}</title>
+        <meta property="og:description" content="{{OG_FB_DESCRIPTION}}" />
+        <meta content="{{KEYWORDS}}" name="keywords" />
+        {{CANONICAL}}
+        {{ALTERNATE_URL}}
+        <meta content="{{ROBOTS}}" name="robots" />
+        {{#OG_FB}}{{OG_FB_URL}}
+        {{OG_FB_SITE_NAME}}
+        {{OG_FB_TYPE}}
+        {{OG_FB_VIDEO}}
+        {{OG_FB_VIDEO_SECURE}}
+        {{OG_FB_VIDEO_TYPE}}
+        {{OG_FB_VIDEO_WIDTH}}
+        {{OG_FB_VIDEO_HEIGHT}}
+        {{/OG_FB}}
+<!--        <meta name="al:iphone:url" property="al:iphone:url" content="nct://" data-app/>
+        <meta name="al:iphone:app_store_id" property="al:iphone:app_store_id" content="433852509" data-app/>
+        <meta name="al:iphone:app_name" property="al:iphone:app_name" content="NhacCuaTui" data-app/>
+        <meta name="al:ipad:url" property="al:ipad:url" content="nctipad://" data-app/>
+        <meta name="al:ipad:app_store_id" property="al:ipad:app_store_id" content="890914731" data-app/>
+        <meta name="al:ipad:app_name" property="al:ipad:app_name" content="NhacCuaTui HD" data-app/>
+        <meta name="al:android:url" property="al:android:url" content="nct://nhaccuatui" data-app/>
+        <meta name="al:android:package" property="al:android:package" content="ht.nct" data-app/>
+        <meta name="al:android:app_name" property="al:android:app_name" content="NCT" data-app/>-->
+        <link href='https://plus.google.com/111737115691013209106' rel='publisher' />
+        <link rel="image_src" href="{{IMAGE}}" />
+        <meta property="fb:app_id" content="{{FACEBOOK_APP_ID}}"/>
+        <meta property="og:title" content="{{OG_FB_TITLE}}"/>
+        <meta property="og:image" content="{{IMAGE_FB}}"/>
+        <meta name="author" content="{{AUTHOR}}" />
+        <meta name="copyright" content="GagBuzz.Com" />
+        <meta content="{{DESCRIPTION}}" name="description" />        
+<!--        <link rel="stylesheet" type="text/css" media="screen, print, projection" href="{{STATIC_URL}}css/nct.screen.{{SCREEN_CSS}}.css"/>
+        <link rel="stylesheet" type="text/css" media="screen, print, projection" href="{{STATIC_URL}}css/nct.custom.{{SCREEN_CUSTOM_CSS}}.css"/>   -->
+        <!--[if IE ]><link rel="stylesheet" type="text/css" media="screen, print, projection" href="{{STATIC_URL}}css/fixie.css"/><![endif]-->           
+        <script type="text/javascript">
+            document.domain = "{{ROOT_DOMAIN}}";
+            var NCTInfo = {"ROOT_URL": "{{ROOT_URL}}", "STATIC_URL": "{{STATIC_URL}}"};
+        </script>
+<!--        <script type="text/javascript" src="{{STATIC_URL}}js/nct.core.min.{{JS_CORE_LIB}}.js"></script>
+        <script type="text/javascript" src="{{STATIC_URL}}js/nct.pack.{{JS_EXE_PACK}}.js"></script>-->
+    </head>
+    <body>
+        <div class="top-header" >
+            <div class="wpage">
+                <h1>Header</h1>
+            </div>
+        </div>
+
+        
+        {{main_content}} 
+        <div class="clr"></div>
+        <div id="nct_boxy"></div>
+    </body>
+</html>
